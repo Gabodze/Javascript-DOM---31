@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .cube{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight:900;
+            color: white;
+        }
+    </style>
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+    <script>
+       
+        var rect =document.getElementsByClassName("cube");
+        var colors = ["red", "green", "blue", "pink", "purple"];
+        for (var x=0; x<rect.length; x++){
+            rect[x].innerHTML = x + 1;
+            rect[x].style.backgroundColor = colors[x];
+        }
+
+    </script>
+</body>
+</html>
